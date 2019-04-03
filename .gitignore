@@ -1,3 +1,4 @@
 .idea/*
 src/.classpath
 src/.project
+src/module-info.java
