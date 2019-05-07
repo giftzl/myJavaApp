@@ -34,6 +34,7 @@ public class BaseSocketServer {
         this.server = new ServerSocket(this.port);
 
         System.out.println("base socket server started.");
+
         // the code will block here till the request come.
         this.socket = server.accept();
 

@@ -42,32 +42,23 @@ public class Minesweeper {
             int y = Integer.parseInt(xy[1]);
 
             //left
-            if (board[x - 1][y] != -1)
-                board[x - 1][y]++;
+            if (board[x - 1][y] != -1) board[x - 1][y]++;
             //right
-            if (board[x + 1][y] != -1)
-                board[x + 1][y]++;
+            if (board[x + 1][y] != -1) board[x + 1][y]++;
             //up
-            if (board[x][y - 1] != -1)
-                board[x][y - 1]++;
+            if (board[x][y - 1] != -1) board[x][y - 1]++;
             //down
-            if (board[x][y + 1] != -1)
-                board[x][y + 1]++;
+            if (board[x][y + 1] != -1) board[x][y + 1]++;
             //upright
-            if (board[x + 1][y - 1] != -1)
-                board[x + 1][y - 1]++;
+            if (board[x + 1][y - 1] != -1) board[x + 1][y - 1]++;
             //upleft
-            if (board[x - 1][y - 1] != -1)
-                board[x - 1][y - 1]++;
+            if (board[x - 1][y - 1] != -1) board[x - 1][y - 1]++;
             //downleft
-            if (board[x - 1][y + 1] != -1)
-                board[x - 1][y + 1]++;
+            if (board[x - 1][y + 1] != -1) board[x - 1][y + 1]++;
             //downright
-            if (board[x + 1][y + 1] != -1)
-                board[x + 1][y + 1]++;
-
-
+            if (board[x + 1][y + 1] != -1)  board[x + 1][y + 1]++;
         }
+
         // print game
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++)
